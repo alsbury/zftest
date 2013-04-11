@@ -13,7 +13,7 @@
     </target>
     
     <target name="phpdoc">
-        <phpdoc title="API Documentation"
+        <!--phpdoc title="API Documentation"
 			destdir="${app-dir}/docs/api"
 			sourcecode="true"
 			output="HTML:frames:earthli">
@@ -27,7 +27,11 @@
 				<include name="INSTALL" />
 				<include name="CHANGELOG" />
 			</projdocfileset>
-		</phpdoc>
+		</phpdoc-->
+        <exec
+            command="/usr/bin/phpdoc -d application/,library/Zftest -e php -t build/docs --title=&quot;ZFTest API Documentation&quot;"
+            dir="${app-dir}"
+            passthru="true"/>
     </target>
     
     <target name="phpcs">
@@ -78,9 +82,9 @@
 		    <formatter type="xml" todir="${app-dir}/docs" outfile="phpunit.xml"/>
 			<batchtest>
 				<fileset dir="${app-dir}/tests">
-	                <include name="application/models/**/*.php"/>
-	                <include name="application/forms/**/*.php"/>
-	                <include name="library/${phing.project.name}/**/*.php"/>
+                    <include name="application/models/**/*.php"/>
+                    <include name="application/forms/**/*.php"/>
+                    <include name="library/${phing.project.name}/**/*.php"/>
 	            </fileset>
 			</batchtest>
 		</phpunit>

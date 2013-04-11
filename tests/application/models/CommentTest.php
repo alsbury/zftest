@@ -135,10 +135,11 @@ class Application_Model_CommentTest extends Zend_Test_PHPUnit_DatabaseTestCase
                 ->setComment('Unit Testing, It is so addictive!!!');
         $mapper = new Application_Model_CommentMapper();
         $mapper->save($comment);
-        
         $ds = new Zend_Test_PHPUnit_Db_DataSet_QueryDataSet(
             $this->getConnection());
         $ds->addTable('comment', 'SELECT * FROM `comment`');
+
+        require_once 'PHPUnit/Extensions/Database/DataSet/DataSetFilter.php';
         $filteredDs = new PHPUnit_Extensions_Database_DataSet_DataSetFilter(
             $ds, array ('comment' => array ('id')));
         

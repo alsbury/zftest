@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Phing Batchtest" tests="25" assertions="25" failures="0" errors="0" time="1.842782">
-    <testsuite name="Application_Form_CommentFormTest" file="/Users/dragonbe/workspace/zftest/tests/application/forms/CommentFormTest.php" fullPackage="Application.Form" tests="7" assertions="7" failures="0" errors="0" time="0.537294">
-      <testsuite name="Application_Form_CommentFormTest::testFormAcceptsValidData" tests="3" assertions="3" failures="0" errors="0" time="0.428244">
-        <testcase name="testFormAcceptsValidData with data set #0" assertions="1" time="0.380429"/>
-        <testcase name="testFormAcceptsValidData with data set #1" assertions="1" time="0.023642"/>
-        <testcase name="testFormAcceptsValidData with data set #2" assertions="1" time="0.024173"/>
+  <testsuite name="Phing Batchtest" tests="27" assertions="27" failures="0" errors="0" time="0.899431">
+    <testsuite name="Application_Form_CommentFormTest" file="/Users/dragonbe/workspace/zftest/tests/application/forms/CommentFormTest.php" fullPackage="Application.Form" tests="7" assertions="7" failures="0" errors="0" time="0.079510">
+      <testsuite name="Application_Form_CommentFormTest::testFormAcceptsValidData" tests="3" assertions="3" failures="0" errors="0" time="0.048640">
+        <testcase name="testFormAcceptsValidData with data set #0" assertions="1" time="0.031165"/>
+        <testcase name="testFormAcceptsValidData with data set #1" assertions="1" time="0.007154"/>
+        <testcase name="testFormAcceptsValidData with data set #2" assertions="1" time="0.010321"/>
       </testsuite>
-      <testsuite name="Application_Form_CommentFormTest::testFormRejectsBadData" tests="4" assertions="4" failures="0" errors="0" time="0.109050">
-        <testcase name="testFormRejectsBadData with data set #0" assertions="1" time="0.019255"/>
-        <testcase name="testFormRejectsBadData with data set #1" assertions="1" time="0.027695"/>
-        <testcase name="testFormRejectsBadData with data set #2" assertions="1" time="0.020661"/>
-        <testcase name="testFormRejectsBadData with data set #3" assertions="1" time="0.041439"/>
+      <testsuite name="Application_Form_CommentFormTest::testFormRejectsBadData" tests="4" assertions="4" failures="0" errors="0" time="0.030870">
+        <testcase name="testFormRejectsBadData with data set #0" assertions="1" time="0.005043"/>
+        <testcase name="testFormRejectsBadData with data set #1" assertions="1" time="0.010010"/>
+        <testcase name="testFormRejectsBadData with data set #2" assertions="1" time="0.006763"/>
+        <testcase name="testFormRejectsBadData with data set #3" assertions="1" time="0.009054"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" fullPackage="Application.Model" tests="12" assertions="12" failures="0" errors="0" time="1.284472">
-      <testcase name="testModelIsEmptyAtConstruct" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="18" assertions="5" time="0.129796"/>
-      <testsuite name="Application_Model_CommentTest::testModelAcceptsValidData" tests="3" assertions="3" failures="0" errors="0" time="0.564392">
-        <testcase name="testModelAcceptsValidData with data set #0" assertions="1" time="0.407163"/>
-        <testcase name="testModelAcceptsValidData with data set #1" assertions="1" time="0.102260"/>
-        <testcase name="testModelAcceptsValidData with data set #2" assertions="1" time="0.054969"/>
+    <testsuite name="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" fullPackage="Application.Model" tests="12" assertions="12" failures="0" errors="0" time="0.799164">
+      <testcase name="testModelIsEmptyAtConstruct" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="18" assertions="5" time="0.020829"/>
+      <testsuite name="Application_Model_CommentTest::testModelAcceptsValidData" tests="3" assertions="3" failures="0" errors="0" time="0.097103">
+        <testcase name="testModelAcceptsValidData with data set #0" assertions="1" time="0.042570"/>
+        <testcase name="testModelAcceptsValidData with data set #1" assertions="1" time="0.029175"/>
+        <testcase name="testModelAcceptsValidData with data set #2" assertions="1" time="0.025358"/>
       </testsuite>
-      <testsuite name="Application_Model_CommentTest::testModelRejectsBadData" tests="4" assertions="0" failures="0" errors="0" time="0.139088">
-        <testcase name="testModelRejectsBadData with data set #0" assertions="0" time="0.031541"/>
-        <testcase name="testModelRejectsBadData with data set #1" assertions="0" time="0.032051"/>
-        <testcase name="testModelRejectsBadData with data set #2" assertions="0" time="0.030417"/>
-        <testcase name="testModelRejectsBadData with data set #3" assertions="0" time="0.045079"/>
+      <testsuite name="Application_Model_CommentTest::testModelRejectsBadData" tests="4" assertions="0" failures="0" errors="0" time="0.074569">
+        <testcase name="testModelRejectsBadData with data set #0" assertions="0" time="0.018094"/>
+        <testcase name="testModelRejectsBadData with data set #1" assertions="0" time="0.016842"/>
+        <testcase name="testModelRejectsBadData with data set #2" assertions="0" time="0.017651"/>
+        <testcase name="testModelRejectsBadData with data set #3" assertions="0" time="0.021982"/>
       </testsuite>
-      <testcase name="testDatabaseCanBeRead" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="103" assertions="1" time="0.095803"/>
-      <testcase name="testDatabaseCanBeUpdated" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="113" assertions="1" time="0.145698"/>
-      <testcase name="testDatabaseCanAddAComment" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="129" assertions="1" time="0.132676"/>
-      <testcase name="testDatabaseCanDeleteAComment" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="149" assertions="1" time="0.077019"/>
+      <testcase name="testDatabaseCanBeRead" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="103" assertions="1" time="0.082192"/>
+      <testcase name="testDatabaseCanBeUpdated" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="113" assertions="1" time="0.384413"/>
+      <testcase name="testDatabaseCanAddAComment" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="129" assertions="1" time="0.101712"/>
+      <testcase name="testDatabaseCanDeleteAComment" class="Application_Model_CommentTest" file="/Users/dragonbe/workspace/zftest/tests/application/models/CommentTest.php" line="150" assertions="1" time="0.038346"/>
     </testsuite>
-    <testsuite name="Zftest_Validate_MwopTest" file="/Users/dragonbe/workspace/zftest/tests/library/Zftest/Validate/MwopTest.php" fullPackage="Zftest.Validate" tests="6" assertions="6" failures="0" errors="0" time="0.021016">
-      <testsuite name="Zftest_Validate_MwopTest::testCorrectNamesPassMwopTest" tests="4" assertions="4" failures="0" errors="0" time="0.014207">
-        <testcase name="testCorrectNamesPassMwopTest with data set #0" assertions="1" time="0.003768"/>
-        <testcase name="testCorrectNamesPassMwopTest with data set #1" assertions="1" time="0.003539"/>
-        <testcase name="testCorrectNamesPassMwopTest with data set #2" assertions="1" time="0.003565"/>
-        <testcase name="testCorrectNamesPassMwopTest with data set #3" assertions="1" time="0.003335"/>
+    <testsuite name="Zftest_Service_JoindinTest" file="/Users/dragonbe/workspace/zftest/tests/library/Zftest/Service/JoindinTest.php" fullPackage="Zftest.Service" tests="2" assertions="2" failures="0" errors="0" time="0.016319">
+      <testcase name="testJoindinCanGetUserDetails" class="Zftest_Service_JoindinTest" file="/Users/dragonbe/workspace/zftest/tests/library/Zftest/Service/JoindinTest.php" line="25" assertions="1" time="0.011481"/>
+      <testcase name="testJoindinCanCheckStatus" class="Zftest_Service_JoindinTest" file="/Users/dragonbe/workspace/zftest/tests/library/Zftest/Service/JoindinTest.php" line="48" assertions="1" time="0.004838"/>
+    </testsuite>
+    <testsuite name="Zftest_Validate_MwopTest" file="/Users/dragonbe/workspace/zftest/tests/library/Zftest/Validate/MwopTest.php" fullPackage="Zftest.Validate" tests="6" assertions="6" failures="0" errors="0" time="0.004438">
+      <testsuite name="Zftest_Validate_MwopTest::testCorrectNamesPassMwopTest" tests="4" assertions="4" failures="0" errors="0" time="0.002818">
+        <testcase name="testCorrectNamesPassMwopTest with data set #0" assertions="1" time="0.000936"/>
+        <testcase name="testCorrectNamesPassMwopTest with data set #1" assertions="1" time="0.000762"/>
+        <testcase name="testCorrectNamesPassMwopTest with data set #2" assertions="1" time="0.000657"/>
+        <testcase name="testCorrectNamesPassMwopTest with data set #3" assertions="1" time="0.000463"/>
       </testsuite>
-      <testsuite name="Zftest_Validate_MwopTest::testBadNamesDoNotPassMwopTest" tests="2" assertions="2" failures="0" errors="0" time="0.006809">
-        <testcase name="testBadNamesDoNotPassMwopTest with data set #0" assertions="1" time="0.003484"/>
-        <testcase name="testBadNamesDoNotPassMwopTest with data set #1" assertions="1" time="0.003325"/>
+      <testsuite name="Zftest_Validate_MwopTest::testBadNamesDoNotPassMwopTest" tests="2" assertions="2" failures="0" errors="0" time="0.001620">
+        <testcase name="testBadNamesDoNotPassMwopTest with data set #0" assertions="1" time="0.000728"/>
+        <testcase name="testBadNamesDoNotPassMwopTest with data set #1" assertions="1" time="0.000892"/>
       </testsuite>
     </testsuite>
   </testsuite>
