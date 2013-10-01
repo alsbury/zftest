@@ -13,6 +13,6 @@
     </filter>
 
 	<logging>
-		<log type="testdox-html" target="/Users/dragonbe/Desktop/testdox.html" />
+        <log type="testdox-html" target="./log/testdox.html" />
 	</logging>
 </phpunit>
